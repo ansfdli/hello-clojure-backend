@@ -2,6 +2,7 @@
   (:require [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.reload :refer [wrap-reload]]))
 
+#_{:clj-kondo/ignore [:unused-binding]}
 (defn handler [request]
   {:status 200 :body "hey guys, test BE clojure"})
 
